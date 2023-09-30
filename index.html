@@ -1,150 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SCE Git Workshop</title>
-	<link rel="icon" type="image/x-icon" href="./favicon.ico">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-	<script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCE Git Workshop</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <script src="script.js"></script>
 </head>
 <body>
-	<!-- Entire page-->
-	<div class="page">
-		<!-- Content (no footer) -->
-		<div class="content">
-			<h1>SCE Git Workshop</h1>
-			<!-- Tab links -->
-			<div class="tab">
-				<button class="tablinks" onclick="openTab(event, 'WhyGit')" id="defaultTab">Why Git?</button>
-				<button class="tablinks" onclick="openTab(event, 'GitCommands')">Git Cheat Sheet</button>
-			</div>
-			<!-- Tab content -->
-			<div id="WhyGit" class="tabcontent">
-				<h3>Why Git?</h3>
-				<ol>
-					<li>Version Tracking:</li>
-					<ul>
-						<li>Git allows you to track changes to your code over time.</li>
-						<li>You can easily compare versions to understand what was added, modified, or deleted.</li>
-					</ul>
-					<li>Collaboration:</li>
-					<ul>
-						<li>Git facilitates collaboration among multiple developers on the same project.</li>
-						<li>Multiple people can work on different branches and merge their changes seamlessly.</li>
-					</ul>
-					<li>Branching and Merging:</li>
-					<ul>
-						<li>Git makes it easy to create branches for different features or bug fixes.</li>
-						<li>You can merge branches back into the main codebase when they are ready.</li>
-					</ul>
-					<li>Undo and Rollback:</li>
-					<ul>
-						<li>Git allows you to undo changes or roll back to a previous state of your code.</li>
-						<li>This can be invaluable for fixing mistakes or dealing with unexpected issues.</li>
-					</ul>
-					<li>Security and Data Integrity:</li>
-					<ul>
-						<li>Git ensures data integrity through cryptographic checksums (SHA-1 hashes) for every file and commit.</li>
-						<li>It's difficult for unauthorized users to alter the history or codebase.</li>
-					</ul>
-					<li>History and Documentation:</li>
-					<ul>
-						<li>Git's commit history provides a detailed record of all changes, including who made them and why.</li>
-						<li>This serves as valuable documentation for project evolution.</li>
-					</ul>
-					<li>And more!</li>
-				</ol>
-				<p>TL;DR: Git version control offers a robust and flexible way to manage code, collaborate with others, and maintain the integrity and history of your projects, making it an essential tool for developers and teams of all sizes.</p>
-			</div>
-			
-			<div id="GitCommands" class="tabcontent">
-				<h3>Git Cheat Sheet</h3>
-				<code>git init</code>
-				<ul>
-					<li>Initializes a new Git repository in the current directory.</li>
-				</ul>
-				<code>git clone [repository URL]</code>
-				<ul>
-					<li>Creates a copy (clone) of a remote Git repository to your local machine.</li>
-				</ul>
-				<code>git add [file(s)]</code>
-				<ul>
-					<li>Stages changes for commit. You can specify specific files or use "." to add all changes.</li>
-				</ul>
-				<code>git commit -m "[commit message]"</code>
-				<ul>
-					<li>Records staged changes in a commit with a descriptive message.</li>
-				</ul>
-				<code>git status</code>
-				<ul>
-					<li>Shows the status of your working directory, including untracked, modified, and staged files.</li>
-				</ul>
-				<code>git log</code>
-				<ul>
-					<li>Displays a history of commits in the repository, including commit hashes, authors, dates, and messages.</li>
-				</ul>
-				<code>git branch</code>
-				<ul>
-					<li>Lists all branches in the repository and indicates the currently active branch with an asterisk (*).</li>
-				</ul>
-				<code>git checkout [branch or commit]</code>
-				<ul>
-					<li>Switches to a different branch or a specific commit. Helpful for navigating your project's history.</li>
-				</ul>
-				<code>git pull</code>
-				<ul>
-					<li>Fetches changes from the remote repository and merges them into the current branch (usually the default branch).</li>
-				</ul>
-				<code>git push</code>
-				<ul>
-					<li>Pushes your local commits to the remote repository, keeping it up to date.</li>
-				</ul>
-				<code>git merge [branch]</code>
-				<ul>
-					<li>Merges changes from a specified branch into the current branch.</li>
-				</ul>
-				<code>git remote -v</code>
-				<ul>
-					<li>Lists the remote repositories linked to your local repository, showing their URLs.</li>
-				</ul>
-				<code>git fetch</code>
-				<ul>
-					<li>Fetches changes from the remote repository but doesn't automatically merge them into the current branch.</li>
-				</ul>
-				<code>git reset [file]</code>
-				<ul>
-					<li>Unstages changes from the staging area, or use with "--hard" to reset to a previous commit (cautiondata loss).</li>
-				</ul>
-				<code>git rm [file]</code>
-				<ul>
-					<li>Removes a file from the working directory and stages the removal for the next commit.</li>
-				</ul>
-				<code>git diff</code>
-				<ul>
-					<li>Shows the differences between the working directory and the last committed version.</li>
-				</ul>
-				<code>git tag [tag name]</code>
-				<ul>
-					<li>Creates a tag (a named pointer to a specific commit) for easy reference to important commits.</li>
-				</ul>
-				<code>git stash</code>
-				<ul>
-					<li>Temporarily saves changes that aren't ready for commit, allowing you to switch branches or perform other tasks.</li>
-				</ul>
-				<code>git push origin --tags</code>
-				<ul>
-					<li>Pushes tags to the remote repository, sharing important points in the project's history.</li>
-				</ul>
-			</div>
-		</div>
-		<!-- Footer -->
-		<div class="footer"><p>Brought to you by SCE Dev-Team</p></div>
-		<script>
-			document.getElementById("defaultTab").click();
-		</script>
-	</div>
+  <!-- Entire page-->
+  <div class="page">
+    <!-- Content (no footer) -->
+    <div class="content">
+      <h1>SCE Git Workshop</h1>
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'WhyGit')" id="defaultTab">Why Git?</button>
+        <button class="tablinks" onclick="openTab(event, 'GitCommands')">Git Cheat Sheet</button>
+      </div>
+      <!-- Tab content -->
+      <div id="WhyGit" class="tabcontent">
+        <h3>Why Git?</h3>
+        <ol>
+          <li>Version Tracking:</li>
+          <ul>
+            <li>Git allows you to track changes to your code over time.</li>
+            <li>You can easily compare versions to understand what was added, modified, or deleted.</li>
+          </ul>
+          <li>Collaboration:</li>
+          <ul>
+            <li>Git facilitates collaboration among multiple developers on the same project.</li>
+            <li>Multiple people can work on different branches and merge their changes seamlessly.</li>
+          </ul>
+          <li>Branching and Merging:</li>
+          <ul>
+            <li>Git makes it easy to create branches for different features or bug fixes.</li>
+            <li>You can merge branches back into the main codebase when they are ready.</li>
+          </ul>
+          <li>Undo and Rollback:</li>
+          <ul>
+            <li>Git allows you to undo changes or roll back to a previous state of your code.</li>
+            <li>This can be invaluable for fixing mistakes or dealing with unexpected issues.</li>
+          </ul>
+          <li>Security and Data Integrity:</li>
+          <ul>
+            <li>Git ensures data integrity through cryptographic checksums (SHA-1 hashes) for every file and commit.</li>
+            <li>It's difficult for unauthorized users to alter the history or codebase.</li>
+          </ul>
+          <li>History and Documentation:</li>
+          <ul>
+            <li>Git's commit history provides a detailed record of all changes, including who made them and why.</li>
+            <li>This serves as valuable documentation for project evolution.</li>
+          </ul>
+          <li>And more!</li>
+        </ol>
+        <p>TL;DR: Git version control offers a robust and flexible way to manage code, collaborate with others, and maintain the integrity and history of your projects, making it an essential tool for developers and teams of all sizes.</p>
+      </div>
+      
+      <div id="GitCommands" class="tabcontent">
+        <h3>Git Cheat Sheet</h3>
+        <code>git init</code>
+        <ul>
+          <li>Initializes a new Git repository in the current directory.</li>
+        </ul>
+        <code>git clone [repository URL]</code>
+        <ul>
+          <li>Creates a copy (clone) of a remote Git repository to your local machine.</li>
+        </ul>
+        <code>git add [file(s)]</code>
+        <ul>
+          <li>Stages changes for commit. You can specify specific files or use "." to add all changes.</li>
+        </ul>
+        <code>git commit -m "[commit message]"</code>
+        <ul>
+          <li>Records staged changes in a commit with a descriptive message.</li>
+        </ul>
+        <code>git status</code>
+        <ul>
+          <li>Shows the status of your working directory, including untracked, modified, and staged files.</li>
+        </ul>
+        <code>git log</code>
+        <ul>
+          <li>Displays a history of commits in the repository, including commit hashes, authors, dates, and messages.</li>
+        </ul>
+        <code>git branch</code>
+        <ul>
+          <li>Lists all branches in the repository and indicates the currently active branch with an asterisk (*).</li>
+        </ul>
+        <code>git checkout [branch or commit]</code>
+        <ul>
+          <li>Switches to a different branch or a specific commit. Helpful for navigating your project's history.</li>
+        </ul>
+        <code>git pull</code>
+        <ul>
+          <li>Fetches changes from the remote repository and merges them into the current branch (usually the default branch).</li>
+        </ul>
+        <code>git push</code>
+        <ul>
+          <li>Pushes your local commits to the remote repository, keeping it up to date.</li>
+        </ul>
+        <code>git merge [branch]</code>
+        <ul>
+          <li>Merges changes from a specified branch into the current branch.</li>
+        </ul>
+        <code>git remote -v</code>
+        <ul>
+          <li>Lists the remote repositories linked to your local repository, showing their URLs.</li>
+        </ul>
+        <code>git fetch</code>
+        <ul>
+          <li>Fetches changes from the remote repository but doesn't automatically merge them into the current branch.</li>
+        </ul>
+        <code>git reset [file]</code>
+        <ul>
+          <li>Unstages changes from the staging area, or use with "--hard" to reset to a previous commit (cautiondata loss).</li>
+        </ul>
+        <code>git rm [file]</code>
+        <ul>
+          <li>Removes a file from the working directory and stages the removal for the next commit.</li>
+        </ul>
+        <code>git diff</code>
+        <ul>
+          <li>Shows the differences between the working directory and the last committed version.</li>
+        </ul>
+        <code>git tag [tag name]</code>
+        <ul>
+          <li>Creates a tag (a named pointer to a specific commit) for easy reference to important commits.</li>
+        </ul>
+        <code>git stash</code>
+        <ul>
+          <li>Temporarily saves changes that aren't ready for commit, allowing you to switch branches or perform other tasks.</li>
+        </ul>
+        <code>git push origin --tags</code>
+        <ul>
+          <li>Pushes tags to the remote repository, sharing important points in the project's history.</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer"><p>Brought to you by SCE Dev-Team</p></div>
+    <script>
+      document.getElementById("defaultTab").click();
+    </script>
+  </div>
 </body>
 
 </html>
