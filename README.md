@@ -53,18 +53,14 @@ We can create our branch a couple different ways:
 
 <details>
 <summary> Using Git Checkout</summary>
-  ```
- git checkout -b [INSERT YOUR BRANCH NAME]
-  ```
+git checkout -b [INSERT YOUR BRANCH NAME]
 </details>
 
 <details>
 <summary> Using Git Branch</summary>
-  ```
- git branch [INSERT YOUR BRANCH NAME]
- git checkout [INSERT YOUR BRANCH NAME]
-  ```
+git branch [INSERT YOUR BRANCH NAME]
 
+git checkout [INSERT YOUR BRANCH NAME]
 </details>
 
 ---
