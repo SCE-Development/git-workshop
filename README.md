@@ -68,7 +68,7 @@ git checkout [INSERT YOUR BRANCH NAME]
 ### Pushing your changes:
 4. We want to make sure we are currently on our new branch. 
 - Make sure to use <code style="color:#A9FFF7">git branch</code> to view the branch you are on. 
-- You can switch to your branch by using "<code style="color:#A9FFF7">git checkout</code> [INSERT YOUR BRANCH NAME]"
+- You can switch to your branch by using "<code style="color:#A9FFF7">git checkout [INSERT YOUR BRANCH NAME]</code>"
 
   Steps:
   1. Change line 144 in your index.html to your name. 
