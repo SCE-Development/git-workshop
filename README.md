@@ -31,7 +31,7 @@ Today we are going to learn the following:
 ---
 ### Cloning the repo:
 2. Next lets try cloning the repo. 
-- For this we will be using <code style="color:#A9FFF7"> git clone</code>.
+- For this we will be using <code style="color:#A9FFF7">git clone</code>.
 - Make sure you are in the folder you want to put the repo into
 
 ```
@@ -67,8 +67,8 @@ git checkout [INSERT YOUR BRANCH NAME]
 
 ### Pushing your changes:
 4. We want to make sure we are currently on our new branch. 
-- Make sure to use <code style="color:#A9FFF7"> git branch </code> to view the branch you are on. 
-- You can switch to your branch by using "<code style="color:#A9FFF7">git checkout </code> [INSERT YOUR BRANCH NAME]"
+- Make sure to use <code style="color:#A9FFF7">git branch</code> to view the branch you are on. 
+- You can switch to your branch by using "<code style="color:#A9FFF7">git checkout</code> [INSERT YOUR BRANCH NAME]"
 
   Steps:
   1. Change line 144 in your index.html to your name. 
@@ -77,10 +77,10 @@ git checkout [INSERT YOUR BRANCH NAME]
     git commit -m "[INSERT YOUR MESSAGE HERE]" index.html
     ```
   3. Once this is complete, you've officially made your first commit. 
-  4. Then type <code style="color:#A9FFF7"> git push </code> into your terminal
+  4. Then type <code style="color:#A9FFF7">git push</code> into your terminal
 ---
 ### Check for everyone else's branches
-5. Remember <code style="color:#A9FFF7">git fetch</code>? Now we should be able to see everyone else's branches on the remote repository when we type <code style="color:#A9FFF7"> git fetch </code>. 
+5. Remember <code style="color:#A9FFF7">git fetch</code>? Now we should be able to see everyone else's branches on the remote repository when we type <code style="color:#A9FFF7">git fetch</code>. 
 
 
 ---
