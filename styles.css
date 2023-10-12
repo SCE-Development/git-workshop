@@ -23,7 +23,7 @@ code {
   justify-content: center;
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #e19fba;
 }
 
 .tab button {
@@ -38,7 +38,7 @@ code {
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #5c8fe2;
 }
 
 .tab button.active {
