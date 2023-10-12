@@ -22,8 +22,8 @@ code {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 1px solid #2675dc;
+  background-color: #658beb;
 }
 
 .tab button {
