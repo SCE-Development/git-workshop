@@ -1,8 +1,10 @@
 h1 {
   text-align: center;
+  color: blue;
 }
 body {
   font-family: "Inter", sans-serif;
+  color: red;
 }
 
 code {
