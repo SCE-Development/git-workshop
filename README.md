@@ -1,87 +1,53 @@
-# git-workshop
-#### Welcome to the Git Workshop hosted by SCE
+# Interview Part 2: GitHub Edition
 
-Today we are going to learn the following: 
-- What is Git/GitHub
-- Basic Version Control
-- Pulling and Pushing Branches
-- Switching/Creating Branches 
+This project is a collaborative collection of simple HTML recipes. You can use AI tools to help you!
 
 ---
-### First Steps:
-1. Install Git
-  - If you dont have Git installed, you will need to install it onto your operating system
 
-| Operating System | Relevant Links |
-| --- | --- |
-| Windows | [Link Here](https://git-scm.com/download/win) |
-| Mac | [Link Here](https://git-scm.com/download/mac) |
-| Linux | [Link Here](https://git-scm.com/download/linux) |
+## 🚀 How to Clone and Setup
 
-<details>
-<summary> Additional Notes for Mac</summary>
-  - There are several ways to install git onto your system. of the options, we reccomend homebrew which you can install with the following command:
-
-  ```
- $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
-  ```
-
-</details>
-
----
-### Cloning the repo:
-2. Next lets try cloning the repo. 
-- For this we will be using <code style="color:#A9FFF7">git clone</code>.
-- Make sure you are in the folder you want to put the repo into
-
-```
+1. Clone the repo:
+```bash
 git clone https://github.com/SCE-Development/git-workshop.git
+cd git-workshop
+```
+2. Once you're in the project directory, run the below command. It will
+output a file path, which you can copy and paste into your browser URL input
+to open the project.
+```
+echo "$(pwd)/index.html"
 ```
 
----
+If on windows:
+```
+echo %cd%\index.html
+```
 
-### Creating your branch:
-3. Now we are going to create a branch specifically for you to work on. There are two types of branches that we can use
+## Contributing
+Make **3 pull requests** as described below. Branch names should follow a convention of:
 
-| Local | Remote |
-| --- | --- |
-| Stored on your computer | Stored on Github |
+`NAME/DATE_short_description`, i.e. `andy/20270601_add_pancake_recipe`
 
-- Today we will be creating a local branch and publishing it onto the workshop repository
+### 1. Add Your Own Recipe
+- Create a new `.html` file with your recipe.
+- Link to it from `index.html`.
+- In your pull request description, **include a screenshot** of your recipe page.
 
-We can create our branch a couple different ways:
+### 2. Modify an Existing Recipe
+- On a separate branch, open a PR that **changes one ingredient or step** in an existing recipe.
 
-<details>
-<summary> Using Git Checkout</summary>
-git checkout -b [INSERT YOUR BRANCH NAME]
-</details>
+### 3. Add a "Food Critic" Section
+- On a third branch that branches **from the same branch as your recipe PR**, add a `<div>` below your recipe labeled **"Food Critic Review"** or similar.
+- This PR should **depend on the recipe PR** and point to your original recipe branch
+- In this PR description, add a note like `merge #NUMBER first!`
 
-<details>
-<summary> Using Git Branch</summary>
-git branch [INSERT YOUR BRANCH NAME]
-
-git checkout [INSERT YOUR BRANCH NAME]
-</details>
-
----
-
-### Pushing your changes:
-4. We want to make sure we are currently on our new branch. 
-- Make sure to use <code style="color:#A9FFF7">git branch</code> to view the branch you are on. 
-- You can switch to your branch by using "<code style="color:#A9FFF7">git checkout [INSERT YOUR BRANCH NAME]</code>"
-
-  Steps:
-  1. Change line 144 in your index.html to your name. 
-  2. In your terminal, you want to commit the changes you have made so type the following:
-    ```
-    git commit -m "[INSERT YOUR MESSAGE HERE]" index.html
-    ```
-  3. Once this is complete, you've officially made your first commit. 
-  4. Then type <code style="color:#A9FFF7">git push</code> into your terminal
----
-### Check for everyone else's branches
-5. Remember <code style="color:#A9FFF7">git fetch</code>? Now we should be able to see everyone else's branches on the remote repository when we type <code style="color:#A9FFF7">git fetch</code>. 
-
-
----
-## <code style="color:#6D98BA"> Congrats, you know the basics of committing and pushing to Git!  </code>
+## A completed 3 pull requests should look like:
+```
+main
+ │
+ ├───▶ YOUR_NAME/DATE_add-my-recipe       (PR #1: Your new recipe)
+ │    │
+ │    └──▶ YOUR_NAME/DATE_add-food-critic (PR #3: Review section)
+ │
+ └───▶ YOUR_NAME/DATE_update-existing     (PR #2: Edits existing recipe)
+```
