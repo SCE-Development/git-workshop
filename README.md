@@ -1,6 +1,6 @@
 # Interview Part 2: GitHub Edition
 
-This project is a collaborative collection of simple HTML recipes. You can use AI tools to help you!a
+This project is a collaborative collection of simple HTML recipes. You can use AI tools to help you!
 
 ---
 
