@@ -1,148 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>COOL RECIPES</title>
+  <style>
+    .dropdown-container {
+      margin-top: 10px;
+    }
+
+    .dropdown-toggle {
+      padding: 0;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-align: left;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .dropdown-content {
+      padding-left: 15px;
+    }
+
+    .dropdown-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+
+    .dropdown-content li {
+      padding: 2px 0;
+    }
+  </style>
 </head>
 
 <body>
   <h1>Recipes that have a special place in my heart</h1>
-  <ul>
-    <li>
-      <a href="recipe/noodlesoup.html">Nood and Soup</a>
-    </li>
-    <li>
-      <a href="recipe/cereal.html">Cereal</a>
-    </li>
-    <li>
-      <a href="recipe/Æbleskiver.html">Æbleskiver</a>
-    </li>
-    <li>
-      <a href="recipe/epic.html">A snack (toast) to remember</a>
-    </li>
-    <li>
-      <a href="recipe/banhmi.html">PEAK BANHMI</a>
-    </li>
-    <li>
-      <a href="recipe/egg.html">Egg city, I am the mayor</a>
-    </li>
-    <li>
-      <a href="recipe/greatestsandwichofalltime.html">Peanut Butter Banana Sandwich</a>
-    </li>
-    <li>
-      <a href="recipe/pasta.html">One-Pot Pasta</a>
-    </li>
-    <li>
-      <a href="recipe/waffle.html">Protein Waffles</a>
-    </li>
-    <li>
-      <a href="recipe/quesadillas.html">Quesadillas</a>
-    </li>
-    <li>
-      <a href="recipe/pizza.html">Pizza</a>
-    </li>
-    <li>
-      <a href="recipe/waffle.html">Protein Waffles</a>
-    </li>
-    <li>
-      <a href="recipe/burger.html">Burger</a>
-    </li>
-    <li>
-      <a href="recipe/lemonade.html">Lemonade</a>
-    </li>
-    <li>
-      <a href="recipe/tarte_tatin.html">Tarte Tatin</a>
-    </li>
-    <li>
-      <a href="recipe/coffee.html">Coffee</a>
-    </li>
-    <li>
-      <a href="hydratedwater.html">Hydrated Water</a>
-    </li>
-    <li>
-      <a href="recipe/bimbibap.html">Bibimbap</a>
-    </li>
-    <li>
-      <a href="recipe/tiramisu.html">100% Success Rate Tiramisu</a>
-    </li>
-    <li>
-      <a href="recipe/popcorn_chicken.html">Popcorn Chicken</a>
-    </li>
-    <li>
-      <a href="recipe/eggdropsoup.html">Egg Drop Soup</a>
-    </li>
-    <li>
-      <a href="recipe/avocado_toast.html">Ac</a>
-    </li>
-    <li>
-      <a href="recipe/tacos.html">Chicken Tacos</a>
-    </li>
-    <li>
-        <a href="recipe/borscht.html">Borscht</a>
-    </li>
-    <li>
-      <a href="recipe/dumplings.html">Dumplings</a>
-    </li>
-    <li>
-      <a href="recipe/friedrice.html">Fried Rice</a>
-    </li>
-    <li>
-      <a href="recipe/beerchickenstew.html"> Beer Chicken Stew with Biscuits</a>
-    </li>
-     <li>
-      <a href="recipe/parfait.html">Yogurt Parfait</a>
-    </li>
-    <li>
-      <a href="recipe/roticanai.html">Roti Canai</a>
-    </li>
-    <li>
-      <a href="recipe/friedchicken.html"> Fried Chicken</a>
-    </li>
-    <li>
-      <a href="recipe/sardinesontoast.html">Sardines on Toast</a>  
-    </li>
-    <li>
-      <a href = "recipe/mugcake.html">Mug Cake</a>
-    </li>
-    <li>
-      <a href = "recipe/salad.html">Caesar Salad </a>
-    </li>
-    <li>
-      <a href ="recipe/fugu.html"> Fugu </a>
-    </li>
-    <li>
-      <a href ="recipe/simpleomlette.html"> Simple Omlette </a>
-    </li>
-    <li>
-      <a href ="recipe/pancake_recipe.html"> Pancake Recipe </a>
-    </li>
-    <li>
-      <a href ="recipe/mayobananasando.html"> Mayo Banana Sando</a>
-    </li>
-    <li>
-      <a href="recipe/alfredo.html">Fettuccine Alfredo</a>
-    </li>
-    <li>
-      <a href = "recipe/afghanpasta.html"> Afghan Pasta</a>
-    </li>
-    <li>
-      <a href = "recipe/yummyflan.html"> Yummy Flan </a>
-    </li>
-    <li>
-      <a href = "recipe/macandcheese.html"> Mac and Cheese </a>
-    </li>
-    <li>
-      <a href = "recipe/padkrapao.html">Pad Kra Pao </a>
-    </li>
-    <li>
-      <a href = "recipe/matcha_cookie.html">Matcha Cookie Recipe </a>
-    </li>
-    <li>
-      <a href = "recipe/thaitea.html">Thai Tea </a>
-    </li>
-    <li>
-      <a href = "recipe/lentilsoup.html">Lentil Soup</a>
-    </li>
-  </ul>
+
+  <div class="dropdown-container">
+    <h2 class="dropdown-toggle">Family Recipes</h2>
+    <div class="dropdown-content">
+      <ul>
+        <li><a href="family/afghanpasta.html">Afghan Pasta</a></li>
+        <li><a href="family/beerchickenstew.html">Beer Chicken Stew with Biscuits</a></li>
+        <li><a href="family/bimbibap.html">Bibimbap</a></li>
+        <li><a href="family/borscht.html">Borscht</a></li>
+        <li><a href="family/dumplings.html">Dumplings</a></li>
+        <li><a href="family/eggdropsoup.html">Egg Drop Soup</a></li>
+        <li><a href="family/noodlesoup.html">Nood and Soup</a></li>
+        <li><a href="family/padkrapao.html">Pad Kra Pao</a></li>
+        <li><a href="family/roticanai.html">Roti Canai</a></li>
+        <li><a href="family/tacos.html">Chicken Tacos</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="dropdown-container">
+    <h2 class="dropdown-toggle">American Comfort</h2>
+    <div class="dropdown-content">
+      <ul>
+        <li><a href="american/alfredo.html">Fettuccine Alfredo</a></li>
+        <li><a href="american/burger.html">Burger</a></li>
+        <li><a href="american/friedchicken.html">Fried Chicken</a></li>
+        <li><a href="american/friedrice.html">Fried Rice</a></li>
+        <li><a href="american/macandcheese.html">Mac and Cheese</a></li>
+        <li><a href="american/nugget.html">Nugget</a></li>
+        <li><a href="american/pasta.html">One-Pot Pasta</a></li>
+        <li><a href="american/pizza.html">Pizza</a></li>
+        <li><a href="american/popcorn_chicken.html">Popcorn Chicken</a></li>
+        <li><a href="american/quesadillas.html">Quesadillas</a></li>
+        <li><a href="american/salad.html">Caesar Salad</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="dropdown-container">
+    <h2 class="dropdown-toggle">Breakfast</h2>
+    <div class="dropdown-content">
+      <ul>
+        <li><a href="breakfast/avocado_toast.html">Avocado Toast</a></li>
+        <li><a href="breakfast/cereal.html">Cereal</a></li>
+        <li><a href="breakfast/egg.html">Egg city, I am the mayor (General Egg)</a></li>
+        <li><a href="breakfast/oatmeal.html">Oatmeal</a></li>
+        <li><a href="breakfast/simpleomlette.html">Simple Omlette</a></li>
+        <li><a href="breakfast/waffle.html">Protein Waffles</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="dropdown-container">
+    <h2 class="dropdown-toggle">Dessert</h2>
+    <div class="dropdown-content">
+      <ul>
+        <li><a href="dessert/Æbleskiver.html">Æbleskiver</a></li>
+        <li><a href="dessert/flan.html">Flan</a></li>
+        <li><a href="dessert/matcha_cookie.html">Matcha Cookie Recipe</a></li>
+        <li><a href="dessert/mugcake.html">Mug Cake</a></li>
+        <li><a href="dessert/parfait.html">Yogurt Parfait</a></li>
+        <li><a href="dessert/tarte_tatin.html">Tarte Tatin</a></li>
+        <li><a href="dessert/tiramisu.html">100% Success Rate Tiramisu</a></li>
+        <li><a href="dessert/yummyflan.html">Yummy Flan</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="dropdown-container">
+    <h2 class="dropdown-toggle">Drinks</h2>
+    <div class="dropdown-content">
+      <ul>
+        <li><a href="drink/coffee.html">Coffee</a></li>
+        <li><a href="drink/hydratedwater.html">Hydrated Water</a></li>
+        <li><a href="drink/lemonade.html">Lemonade</a></li>
+        <li><a href="drink/thaitea.html">Thai Tea</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="dropdown-container">
+    <h2 class="dropdown-toggle">Real</h2>
+    <div class="dropdown-content">
+      <ul>
+        <li><a href="real/banhmi.html">PEAK BANHMI</a></li>
+        <li><a href="real/coolPBJRecipie.html">Cool PB&J Recipie</a></li>
+        <li><a href="real/epic.html">A snack (toast) to remember</a></li>
+        <li><a href="real/fugu.html">Fugu</a></li>
+        <li><a href="real/greatestsandwichofalltime.html">Peanut Butter Banana Sandwich</a></li>
+        <li><a href="real/mayobananasando.html">Mayo Banana Sando</a></li>
+        <li><a href="real/sardinesontoast.html">Sardines on Toast</a></li>
+      </ul>
+    </div>
+  </div>
+
 </body>
 </html>
