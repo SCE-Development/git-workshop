@@ -39,8 +39,9 @@ https://github.com/SCE-Development/git-workshop/pulls
 ### 2. Modify an Existing Recipe
 - On a separate branch, open a PR that **changes one ingredient or step** in an existing recipe.
 
-### 3. Add a "Food Critic" Section
+### 3. Add "Food Critic" and "Peronsal Story" Sections
 - On a third branch that branches **from the same branch as your recipe PR**, add a `<div>` below your recipe labeled **"Food Critic Review"** or similar.
+- Then, add another `<div>` below your recipe title to discuss your recipe's history, such as whether it originated from a family member, a famous chef, or elsewhere.
 - This PR should **depend on the recipe PR** and point to your original recipe branch
 - In this PR description, add a note like `merge #NUMBER first!`
 
