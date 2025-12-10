@@ -39,8 +39,11 @@ https://github.com/SCE-Development/git-workshop/pulls
 ### 2. Modify an Existing Recipe
 - On a separate branch, open a PR that **changes one ingredient or step** in an existing recipe.
 
-### 3. Add a "Food Critic" Section
-- On a third branch that branches **from the same branch as your recipe PR**, add a `<div>` below your recipe labeled **"Food Critic Review"** or similar.
+### 3. Add a "Food Critic" or "Recipe Lore" Section
+- On a third branch that branches **from the same branch as your recipe PR**, add a `<div>` below your recipe labeled **"Food Critic Review"** ,  **"Recipe Lore"**, or something similar
+- Add a description under this `<div>` that **corresponds to your section title**
+    - We want these to be personalized, so be creative!
+    - Make up whatever wacky addition you want!
 - This PR should **depend on the recipe PR** and point to your original recipe branch
 - In this PR description, add a note like `merge #NUMBER first!`
 
@@ -50,7 +53,7 @@ main
  │
  ├───▶ YOUR_NAME/DATE_add-my-recipe       (PR #1: Your new recipe)
  │    │
- │    └──▶ YOUR_NAME/DATE_add-food-critic (PR #3: Review section)
+ │    └──▶ YOUR_NAME/DATE_add-food-critic-or-recipe-lore (PR #3: Review section)
  │
  └───▶ YOUR_NAME/DATE_update-existing     (PR #2: Edits existing recipe)
 ```
