@@ -43,7 +43,6 @@ https://github.com/SCE-Development/git-workshop/pulls
 - On a third branch that branches **from the same branch as your recipe PR**, add a `<div>` below your recipe labeled **"Food Critic Review"** ,  **"Recipe Lore"**, or something similar
 - Add a description under this `<div>` that **corresponds to your section title**
     - We want these to be personalized, so be creative!
-    - Make up whatever wacky addition you want!
 - This PR should **depend on the recipe PR** and point to your original recipe branch
 - In this PR description, add a note like `merge #NUMBER first!`
 
