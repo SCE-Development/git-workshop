@@ -61,7 +61,7 @@ main
 for an example of the 3 PRs, see:
 - [#24](https://github.com/SCE-Development/git-workshop/pull/24) as step 1,
 adding the recipe
-- [#25](https://github.com/SCE-Development/git-workshop/pull/25) as step 2,
+- [#330](https://github.com/SCE-Development/git-workshop/pull/330) as step 2,
 deleting an existing recipe
 - [#26](https://github.com/SCE-Development/git-workshop/pull/26) as step 3,
 branching off of step 1, and the pr pointing to step 1 instead of main
