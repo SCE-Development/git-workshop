@@ -55,13 +55,13 @@ main
  │    │
  │    └──▶ YOUR_NAME/DATE_add-food-critic-or-recipe-lore (PR #3: Review section)
  │
- └───▶ YOUR_NAME/DATE_update-existing     (PR #2: Edits existing recipe)
+ └───▶ YOUR_NAME/DATE_delete-existing     (PR #2: Deletes existing recipe)
 ```
 
 for an example of the 3 PRs, see:
 - [#24](https://github.com/SCE-Development/git-workshop/pull/24) as step 1,
 adding the recipe
 - [#25](https://github.com/SCE-Development/git-workshop/pull/25) as step 2,
-updating an existing recipe
+deleting an existing recipe (note: this example updates a recipe but you should be deleting)
 - [#26](https://github.com/SCE-Development/git-workshop/pull/26) as step 3,
 branching off of step 1, and the pr pointing to step 1 instead of main
