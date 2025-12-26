@@ -36,8 +36,8 @@ https://github.com/SCE-Development/git-workshop/pulls
 - Link to it from `index.html`.
 - In your pull request description, **include a screenshot** of your recipe page.
 
-### 2. Modify an Existing Recipe
-- On a separate branch, open a PR that **changes one ingredient or step** in an existing recipe.
+### 2. Delete an Existing Recipe
+- On a separate branch, open a PR that **deletes an existing recipe**. Make sure that your PR deletes both the file AND the recipe entry in `index.html`. In your PR description, tell us why your new recipe that you created in Step 1 is better than the recipe you deleted here.
 
 ### 3. Add a "Food Critic" or "Recipe Lore" Section
 - On a third branch that branches **from the same branch as your recipe PR**, add a `<div>` below your recipe labeled **"Food Critic Review"** ,  **"Recipe Lore"**, or something similar
@@ -55,13 +55,13 @@ main
  │    │
  │    └──▶ YOUR_NAME/DATE_add-food-critic-or-recipe-lore (PR #3: Review section)
  │
- └───▶ YOUR_NAME/DATE_update-existing     (PR #2: Edits existing recipe)
+ └───▶ YOUR_NAME/DATE_remove-box-of-cereal     (PR #2: Removes existing recipe)
 ```
 
 for an example of the 3 PRs, see:
 - [#24](https://github.com/SCE-Development/git-workshop/pull/24) as step 1,
 adding the recipe
-- [#25](https://github.com/SCE-Development/git-workshop/pull/25) as step 2,
-updating an existing recipe
+- [#330](https://github.com/SCE-Development/git-workshop/pull/330) as step 2,
+deleting an existing recipe
 - [#26](https://github.com/SCE-Development/git-workshop/pull/26) as step 3,
 branching off of step 1, and the pr pointing to step 1 instead of main
