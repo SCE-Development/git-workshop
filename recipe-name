@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midnight Peanut Noodles</title>
+  </head>
+  <body>
+
+    <h1>Midnight Peanut Noodles</h1>
+    <p><em>It’s 11:47pm and you suddenly remember you’re a person who needs food.</em></p>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li>8 oz noodles (ramen, udon, spaghetti—no judgment)</li>
+      <li>2 tbsp peanut butter</li>
+      <li>1 tbsp soy sauce</li>
+      <li>1 tsp honey or sugar</li>
+      <li>1 tsp sesame oil (optional but extremely main-character)</li>
+      <li>1–2 tsp sriracha (optional)</li>
+      <li>Splash of hot noodle water (the secret handshake)</li>
+      <li>Toppings: scallions, sesame seeds, crushed peanuts</li>
+    </ul>
+
+    <h2>Steps</h2>
+    <ol>
+      <li>Cook noodles. Save ~1/4 cup of hot noodle water.</li>
+      <li>Mix peanut butter, soy sauce, honey, sesame oil, and sriracha in a bowl.</li>
+      <li>Add a splash of noodle water and stir until glossy and sauce-like.</li>
+      <li>Toss noodles with sauce. Add more noodle water if needed.</li>
+      <li>Top with whatever makes you feel powerful.</li>
+    </ol>
+  </body>
+</html>
+
+
+<div>
+    <h2>Food Critic Review</h2>
+    <p>
+      I approached these noodles with the skepticism of a man who has been disappointed by “quick meals” before.
+      I was humbled. The sauce clung to the noodles like a heartfelt apology. Notes of peanutty confidence,
+      a whisper of soy intrigue, and just enough heat to remind you this is the best food you have ever tasted.
+    </p>
+  </div>
+  
