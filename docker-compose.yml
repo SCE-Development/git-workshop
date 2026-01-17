@@ -2,11 +2,13 @@ version: '3'
 services:
   recipe-nginx:
     image: nginx:alpine
+    ports:
+      - 3003:80
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./:/usr/share/nginx/html:ro
 
-networks:
-  default:
-    external:
-      name: sce
+# networks:
+#   default:
+#     external:
+#       name: sce
