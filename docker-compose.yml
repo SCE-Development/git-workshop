@@ -4,7 +4,6 @@ services:
     image: nginx:alpine
     ports:
       - 3003:80
-
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./:/usr/share/nginx/html:ro
