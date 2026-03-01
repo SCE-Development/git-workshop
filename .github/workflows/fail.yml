@@ -1,0 +1,25 @@
+name: Failure Simulator
+
+# This triggers on every push or can be run manually from the Actions tab
+on: 
+  push:
+  workflow_dispatch:
+
+jobs:
+  simulate-failure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log Intent
+        run: echo "Starting the workflow... everything looks fine so far."
+
+      - name: Force Exit with Error
+        run: |
+          echo "Error: A simulated critical failure has occurred!"
+          # Any non-zero exit code tells GitHub the step failed
+          exit 1
+
+      - name: This won't run
+        run: echo "You will never see this message because the step above failed."
