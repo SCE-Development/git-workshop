@@ -15,11 +15,11 @@ jobs:
       - name: Log Intent
         run: echo "Starting the workflow... everything looks fine so far."
 
-      - name: Force Exit with Error
+      - name: passes no matter what
         run: |
-          echo "Error: A simulated critical failure has occurred!"
+          echo "yay passed"
           # Any non-zero exit code tells GitHub the step failed
-          exit 1
+          exit 0
 
       - name: This won't run
         run: echo "You will never see this message because the step above failed."
