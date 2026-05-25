@@ -29,7 +29,9 @@ Make **3 pull requests** as described below. Branch names should follow a conven
 `NAME/DATE_short_description`, i.e. `andy/20270601_add_pancake_recipe`
 
 ### 0. Approve a random pr with a nice comment at the below list
-https://github.com/SCE-Development/git-workshop/pulls
+- https://github.com/SCE-Development/git-workshop/pulls
+- to learn how to approve a pr on github, watch the last section in the below video
+    - [https://www.youtube.com/watch?v=ypiJfHblzGQ](https://youtu.be/ypiJfHblzGQ?t=400)
 
 ### 1. Add Your Own Recipe
 - Create a new `.html` file with your recipe.
