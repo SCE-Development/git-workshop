@@ -1,7 +1,8 @@
 # Interview Part 2: GitHub Edition
 
-This project is a collaborative collection of simple HTML recipes. You can use AI tools to help you!
+This project is a collaborative collection of simple HTML recipes. You can use AI tools to help you!  
 
+**IMPORTANT**: Please ensure you disable GitHub Copilot PR Reviews (or any other AI code review bot). Any PRs with an AI review are required to be redone. 
 ---
 
 ## How to Clone and Setup
