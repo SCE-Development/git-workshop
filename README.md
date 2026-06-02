@@ -1,7 +1,8 @@
 # Interview Part 2: GitHub Edition
 
-This project is a collaborative collection of simple HTML recipes. You can use AI tools to help you!
+This project is a collaborative collection of simple HTML recipes. You can use AI tools to help you!  
 
+**IMPORTANT**: Please ensure you disable GitHub Copilot PR Reviews (or any other AI code review bot). Any PRs with an AI review are required to be redone. 
 ---
 
 ## How to Clone and Setup
@@ -39,7 +40,7 @@ Make **3 pull requests** as described below. Branch names should follow a conven
 - In your pull request description, **include a screenshot** of your recipe page.
 
 ### 2. Delete an Existing Recipe
-- On a separate branch, open a PR that **deletes an existing recipe**. Make sure that your PR deletes both the file AND the recipe entry in `index.html`. In your PR description, tell us why your new recipe that you created in Step 1 is better than the recipe you deleted here.
+- On a new branch off of main, open a PR that **deletes an existing recipe**. Make sure that your PR deletes both the file AND the recipe entry in `index.html`. In your PR description, tell us why your new recipe that you created in Step 1 is better than the recipe you deleted here.
 
 ### 3. Add a "Food Critic" or "Recipe Lore" Section
 - On a third branch that branches **from the same branch as your recipe PR**, add a `<div>` below your recipe labeled **"Food Critic Review"** ,  **"Recipe Lore"**, or something similar
