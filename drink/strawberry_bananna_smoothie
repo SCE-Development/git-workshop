@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Strawberry-Banana Smoothie</title>
+</head>
+
+<body>
+    <a href="../index.html">Back to Home</a>
+
+    <h1>Strawberry-Banana Smoothie</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>Frozen Strawberries</li>
+        <li>Frozen Bananas</li>
+        <li>Fruit juice of choice</li>
+        <li>Protein Powder (Optional)</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>
+            Put strawberries into blender
+        </li>
+        <li>
+            Put bananas into blender
+        </li>
+        <li>
+            Put small amount of juice into blender
+        </li>
+        <li>
+            Add half a scoop of protein powder
+        </li>
+        <li>
+            Blend and add water if needed until pourable 
+        </li>
+    </ol>
+
+    <div>
+        <!--Food critic section-->
+    </div>
+</body>
+</html>
