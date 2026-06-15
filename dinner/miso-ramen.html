@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midnight Miso Ramen </title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+      :root {
+        --ink: #1a1a1a;
+        --paper: #faf8f4;
+        --broth: #c8522b;
+        --steam: #e8dfd0;
+        --accent: #2b5c8a;
+        --muted: #6b6560;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: var(--paper);
+        color: var(--ink);
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 3rem 2rem 5rem;
+      }
+
+      /* Vertical Japanese text stamp in corner */
+      .stamp {
+        writing-mode: vertical-rl;
+        font-family: 'Noto Serif JP', serif;
+        font-size: 0.7rem;
+        color: var(--broth);
+        letter-spacing: 0.15em;
+        opacity: 0.6;
+        float: right;
+        margin-top: 0.5rem;
+        margin-left: 1.5rem;
+      }
+
+      h1 {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        margin-bottom: 0.4rem;
+      }
+
+      .subtitle {
+        font-size: 0.9rem;
+        color: var(--muted);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid var(--steam);
+        padding-bottom: 1.2rem;
+      }
+
+      .meta {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+        flex-wrap: wrap;
+      }
+
+      .meta-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+      }
+
+      .meta-label {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+      }
+
+      .meta-value {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--broth);
+      }
+
+      h2 {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: var(--ink);
+        margin-bottom: 1rem;
+        margin-top: 2.4rem;
+        padding-left: 0.75rem;
+        border-left: 3px solid var(--broth);
+      }
+
+      /* Ingredient grid */
+      .ingredients {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.4rem 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .ingredient {
+        display: flex;
+        gap: 0.5rem;
+        align-items: baseline;
+        font-size: 0.95rem;
+        padding: 0.3rem 0;
+        border-bottom: 1px solid var(--steam);
+      }
+
+      .ingredient-amount {
+        font-weight: 600;
+        color: var(--broth);
+        min-width: 3.5rem;
+        font-size: 0.85rem;
+        flex-shrink: 0;
+      }
+
+      /* Steps */
+      ol {
+        list-style: none;
+        counter-reset: step-counter;
+      }
+
+      ol li {
+        counter-increment: step-counter;
+        display: flex;
+        gap: 1.25rem;
+        align-items: flex-start;
+        margin-bottom: 1.1rem;
+        font-size: 0.95rem;
+      }
+
+      ol li::before {
+        content: counter(step-counter, decimal-leading-zero);
+        font-family: 'Noto Serif JP', serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--broth);
+        opacity: 0.6;
+        flex-shrink: 0;
+        min-width: 2rem;
+        padding-top: 0.05rem ;
+      }
+
+      /* Food Critic Review section */
+      .critic-section {
+        margin-top: 3.5rem;
+        background: var(--ink);
+        color: var(--paper);
+        padding: 2rem 2rem 2.5rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .critic-section::before {
+        content: '★★★½';
+        font-size: 4rem;
+        color: var(--broth);
+        opacity: 0.12;
+        position: absolute;
+        top: -0.5rem;
+        right: 1rem;
+        line-height: 1;
+        pointer-events: none;
+      }
+
+      .critic-byline {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--broth);
+        margin-bottom: 0.6rem;
+      }
+
+      .critic-section h2 {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: var(--paper);
+        margin: 0 0 1rem 0;
+        border-left: 3px solid var(--broth);
+        padding-left: 0.75rem;
+        margin-top: 0;
+      }
+
+      .critic-stars {
+        display: flex;
+        gap: 0.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .star {
+        color: var(--broth);
+        font-size: 1rem;
+      }
+
+      .star.half {
+        opacity: 0.5;
+      }
+
+      .critic-body {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: #d4cfc9;
+      }
+
+      .critic-body p + p {
+        margin-top: 1rem;
+      }
+
+      .critic-pull {
+        font-family: 'Noto Serif JP', serif;
+        font-size: 1.15rem;
+        font-style: italic;
+        color: var(--paper);
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+        padding: 0.8rem 0;
+        margin: 1.2rem 0;
+        line-height: 1.5;
+      }
+
+      .critic-attribution {
+        margin-top: 1.5rem;
+        font-size: 0.75rem;
+        color: var(--muted);
+        letter-spacing: 0.06em;
+        text-align: right;
+      }
+
+      .tip {
+        background: var(--steam);
+        border-left: 3px solid var(--accent);
+        padding: 0.8rem 1rem;
+        font-size: 0.88rem;
+        color: var(--muted);
+        margin-top: 1.5rem;
+        border-radius: 0 2px 2px 0;
+      }
+
+      .tip strong {
+        color: var(--accent);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      @media (max-width: 500px) {
+        .ingredients { grid-template-columns: 1fr; }
+        h1 { font-size: 1.8rem; }
+        .stamp { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <span class="stamp">味噌ラーメン · 深夜の一杯</span>
+
+    <h1>Midnight Miso Ramen</h1>
+    <div class="subtitle">A bowl for 2 a.m. and long deadlines</div>
+
+    <div class="meta">
+      <div class="meta-item">
+        <span class="meta-label">Prep</span>
+        <span class="meta-value">15 min</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Cook</span>
+        <span class="meta-value">25 min</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Serves</span>
+        <span class="meta-value">2</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Difficulty</span>
+        <span class="meta-value">Easy</span>
+      </div>
+    </div>
+
+    <h2>Ingredients</h2>
+    <div class="ingredients">
+      <div class="ingredient"><span class="ingredient-amount">3 tbsp</span> white miso paste</div>
+      <div class="ingredient"><span class="ingredient-amount">1 tbsp</span> sesame paste (tahini works)</div>
+      <div class="ingredient"><span class="ingredient-amount">4 cups</span> chicken or vegetable broth</div>
+      <div class="ingredient"><span class="ingredient-amount">1 cup</span> water</div>
+      <div class="ingredient"><span class="ingredient-amount">1 tbsp</span> soy sauce</div>
+      <div class="ingredient"><span class="ingredient-amount">1 tsp</span> toasted sesame oil</div>
+      <div class="ingredient"><span class="ingredient-amount">1 tbsp</span> neutral oil</div>
+      <div class="ingredient"><span class="ingredient-amount">4 cloves</span> garlic, minced</div>
+      <div class="ingredient"><span class="ingredient-amount">1 tsp</span> fresh ginger, grated</div>
+      <div class="ingredient"><span class="ingredient-amount">1 tbsp</span> gochujang (optional, for heat)</div>
+      <div class="ingredient"><span class="ingredient-amount">2 portions</span> fresh or dried ramen noodles</div>
+      <div class="ingredient"><span class="ingredient-amount">2</span> soft-boiled eggs</div>
+      <div class="ingredient"><span class="ingredient-amount">2 stalks</span> green onion, sliced</div>
+      <div class="ingredient"><span class="ingredient-amount">1 sheet</span> nori, cut into strips</div>
+      <div class="ingredient"><span class="ingredient-amount">handful</span> corn kernels (canned is fine)</div>
+      <div class="ingredient"><span class="ingredient-amount">1 tsp</span> sesame seeds</div>
+    </div>
+
+    <div class="tip">
+      <strong>Soft-boil trick</strong> — Bring water to a full boil, lower eggs in gently, cook exactly 6 min 30 sec, then ice bath. Peel under running water. Marinate in 2 tbsp soy + 1 tbsp mirin + water overnight for ramen eggs.
+    </div>
+
+    <h2>Instructions</h2>
+    <ol>
+      <li>Whisk together miso paste, sesame paste, soy sauce, and gochujang (if using) in a small bowl until smooth. Set aside — this is your tare.</li>
+      <li>Heat neutral oil in a medium pot over medium heat. Add garlic and ginger and stir constantly for about 90 seconds until fragrant but not browned.</li>
+      <li>Pour in broth and water. Bring to a gentle simmer (not a hard boil) over medium-high heat.</li>
+      <li>Turn heat to low. Whisk the tare into the broth until fully dissolved. Taste — adjust with more miso for depth, more soy for salt. Finish with sesame oil and keep warm on low.</li>
+      <li>Cook ramen noodles in a separate pot of boiling water per package directions. Drain and rinse briefly under hot water.</li>
+      <li>Divide noodles between two bowls. Ladle hot broth over the noodles. Arrange toppings: halved soft-boiled egg, green onion, corn, nori strips, and a pinch of sesame seeds.</li>
+    </ol>
+
+    <!-- PR #3 content goes here — branched off this file -->
+    <div class="critic-section">
+      <div class="critic-byline">Food Critic Review — Est. 2026</div>
+      <h2>★ A Credible Midnight Achievement ★</h2>
+
+      <div class="critic-stars">
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star half">★</span>
+      </div>
+
+      <div class="critic-body">
+        <p>
+          I arrived, as one must, suspicious. A home ramen recipe — how <em>optimistic</em> of us. 
+          The amateur's delusion that broth complexity can be coaxed from a pot in under thirty minutes 
+          has produced more disappointment than any other culinary fantasy this decade. 
+          And yet.
+        </p>
+
+        <div class="critic-pull">
+          "The tare — whisked with something approaching actual conviction — lands the bowl squarely 
+          in the territory of the quietly competent."
+        </div>
+
+        <p>
+          The miso base is, against my better expectations, not watery. The sesame paste introduces 
+          a roundness that one normally associates with the kind of ramen that requires a two-hour 
+          train ride and a twelve-person queue. The gochujang, deployed optionally but wisely, 
+          contributes a low, persistent warmth that I found myself returning to with 
+          something resembling enthusiasm.
+        </p>
+
+        <p>
+          The corn is, of course, <em>extremely</em> informal. I shall say nothing further about the corn.
+        </p>
+
+        <p>
+          My primary objection is the phrase "canned is fine" appearing in a recipe that is otherwise 
+          trying sincerely. It is not fine. It is <em>acceptable</em>. These are different things, 
+          and we should be honest with ourselves about which one we are doing at 2 a.m.
+        </p>
+      </div>
+
+      <div class="critic-attribution">
+        — Reviewed by R. Pemberton-Huxley III, <em>The Midnight Table Quarterly</em>
+      </div>
+    </div>
+
+  </body>
+</html>
