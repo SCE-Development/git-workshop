@@ -6,7 +6,7 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./:/usr/share/nginx/html:ro
 
-networks:
-  default:
-    external:
-      name: sce
+# networks:
+#   default:
+#     external:
+#       name: sce
